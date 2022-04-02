@@ -1,0 +1,5 @@
+project: qoi
+target: fuzzer
+
+cmds:
+  - cmd: /a.out
