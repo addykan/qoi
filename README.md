@@ -41,10 +41,24 @@ If this is a limitation for your use case, please look into any of the other
 implementations listed below.
 
 
+## Improvements, New Versions and Contributing
+
+The QOI format has been finalized. It was a conscious decision to **not** have a
+version number in the file header. If you have a working QOI implementation today, 
+you can rest assured that it will be compatible with all QOI files tomorrow.
+
+There are a lot of interesting ideas for a successor of QOI, but none of these will 
+be implemented here. That doesn't mean you shouldn't experiment with QOI, but please
+be aware that pull requests that change the format will not be accepted.
+
+Likewise, pull requests for performance improvements will probably not be accepted
+either, as this "reference implementation" tries to be as easy to read as possible.
+
+
 ## Tools
 
 - https://github.com/floooh/qoiview - native QOI viewer
-- https://github.com/pfusik/qoi-ci/releases/tag/qoi-ci-1.1.0 - QOI Plugin installer for GIMP, Imagine, Paint.NET and XnView MP
+- https://github.com/pfusik/qoi-ci/releases/tag/qoi-ci-1.1.1 - QOI Plugin installer for GIMP, Imagine, Paint.NET and XnView MP
 - https://github.com/iOrange/QoiFileTypeNet/releases/tag/v0.2 - QOI Plugin for Paint.NET
 - https://github.com/iOrange/QOIThumbnailProvider - Add thumbnails for QOI images in Windows Explorer
 - https://github.com/Tom94/tev - another native QOI viewer (allows pixel peeping and comparison with other image formats)
@@ -60,6 +74,7 @@ implementations listed below.
 
 - https://github.com/pfusik/qoi-ci (Ć, transpiled to C, C++, C#, Java, JavaScript, Python and Swift)
 - https://github.com/kodonnell/qoi (Python)
+- https://github.com/JaffaKetchup/dqoi (Dart, with Flutter support)
 - https://github.com/Cr4xy/lua-qoi (Lua)
 - https://github.com/superzazu/SDL_QOI (C, SDL2 bindings)
 - https://github.com/saharNooby/qoi-java (Java)
@@ -81,7 +96,12 @@ implementations listed below.
 - https://github.com/LightHouseSoftware/qoiformats (D)
 - https://github.com/mhoward540/qoi-nim (Nim)
 - https://github.com/wx257osn2/qoixx (C++)
-
+- https://github.com/Tiefseetauchner/lr-paint (Processing)
+- https://github.com/amstan/qoi-fpga (FPGA: verilog)
+- https://github.com/musabkilic/qoi-decoder (Python)
+- https://github.com/mathpn/py-qoi (Python)
+- https://github.com/JohannesFriedrich/qoi4R (R)
+- https://github.com/shraiwi/mini-qoi (C, streaming decoder)
 
 ## QOI Support in Other Software
 
@@ -89,7 +109,7 @@ implementations listed below.
 - [Raylib](https://github.com/raysan5/raylib) supports decoding and encoding QOI textures through its [rtextures module](https://github.com/raysan5/raylib/blob/master/src/rtextures.c)
 - [Rebol3](https://github.com/Oldes/Rebol3/issues/39) supports decoding and encoding QOI using a native codec
 - [c-ray](https://github.com/vkoskiv/c-ray) supports QOI natively
-- [SAIL](https://github.com/HappySeaFox/sail) image decoding library, supports decoding and encoding QOI images
+- [SAIL](https://sail.software) image decoding library, supports decoding and encoding QOI images
 - [Orx](https://github.com/orx/orx) 2D game engine, supports QOI natively
 - [IrfanView](https://www.irfanview.com) supports decoding and encoding QOI through its Formats plugin
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick) supports decoding and encoding QOI, since 7.1.0-20
